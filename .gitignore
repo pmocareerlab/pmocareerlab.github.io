@@ -1,0 +1,10 @@
+public/
+resources/_gen/
+.hugo_build.lock
+node_modules/
+.DS_Store
+*.Zone.Identifier
+*:Zone.Identifier
+*.xlsx
+.claude/
+引き継ぎブリーフィング_Claude_Code向け.md
