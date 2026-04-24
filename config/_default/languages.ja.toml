@@ -16,6 +16,4 @@ languageCode = "ja"
     name = "PMOキャリアラボ 編集部"
     headline = "SIer PMO歴10年以上 | キャリア戦略研究家"
     bio = "大手SIerでPMOを10年以上経験。社内政治・年功序列の壁にぶつかりながらも転職・フリーランス転向を果たした実体験をもとに、PMOのリアルなキャリア情報を発信しています。"
-    links = [
-      { email = "mailto:contact.pmocareerlab@gmail.com" },
-    ]
+    links = []

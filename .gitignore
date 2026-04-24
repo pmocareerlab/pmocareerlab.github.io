@@ -8,3 +8,8 @@ node_modules/
 *.xlsx
 .claude/
 引き継ぎブリーフィング_Claude_Code向け.md
+.env
+.env.*
+*.secret
+*.pem
+*.key
