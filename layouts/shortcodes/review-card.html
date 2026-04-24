@@ -1,0 +1,35 @@
+{{- $service := .Get "service" -}}
+{{- $rating  := .Get "rating" -}}
+{{- $summary := .Get "summary" -}}
+{{- $url     := .Get "cta_url" -}}
+{{- $label   := .Get "cta_label" | default "公式サイトで詳細を見る" -}}
+{{- $stars   := "" -}}
+{{- if $rating -}}
+  {{- $r := $rating | float -}}
+  {{- range seq 1 5 -}}
+    {{- if le . ($r | int) -}}{{- $stars = print $stars "★" -}}
+    {{- else -}}{{- $stars = print $stars "☆" -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+<div class="review-card">
+  <div class="review-header">
+    <div class="review-name">{{ $service }}</div>
+    {{ with $rating }}
+    <div class="review-score">
+      <span class="review-stars">{{ $stars }}</span>
+      <span class="review-score-num">{{ . }}</span>
+      <span class="review-score-max">/ 5.0</span>
+    </div>
+    {{ end }}
+  </div>
+  <div class="review-body">
+    {{ .Inner | markdownify }}
+    {{ with $summary }}<div class="review-summary">{{ . | markdownify }}</div>{{ end }}
+    {{ with $url }}
+    <div class="review-cta-wrap">
+      <a href="{{ . }}" rel="sponsored nofollow noopener" target="_blank" class="review-cta">{{ $label }} →</a>
+    </div>
+    {{ end }}
+  </div>
+</div>

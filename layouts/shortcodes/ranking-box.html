@@ -1,0 +1,24 @@
+{{- $rank    := .Get "rank"      | default "1" -}}
+{{- $title   := .Get "title" -}}
+{{- $logo    := .Get "logo" -}}
+{{- $rating  := .Get "rating" -}}
+{{- $tagline := .Get "tagline" -}}
+{{- $summary := .Get "summary" -}}
+{{- $url     := .Get "cta_url" -}}
+{{- $label   := .Get "cta_label" | default "公式サイトで詳細を見る" -}}
+{{- $crowns  := slice "👑 1位" "🥈 2位" "🥉 3位" -}}
+{{- $crown   := index $crowns (sub ($rank | int) 1) | default (print $rank "位") -}}
+<div class="ranking-box rank-{{ $rank }}">
+  <div class="ranking-crown">{{ $crown }}</div>
+  <div class="ranking-rank-num">{{ $rank }}</div>
+  <div class="ranking-body">
+    {{ with $logo }}<img src="{{ . }}" alt="{{ $title }}" style="height:40px;margin-bottom:6px;display:block;">{{ end }}
+    <div class="ranking-name">{{ $title }}</div>
+    {{ with $tagline }}<div class="ranking-tagline">{{ . }}</div>{{ end }}
+    {{ with $rating }}<div style="font-size:13px;color:var(--color-accent);margin-bottom:8px;">★ {{ . }}</div>{{ end }}
+    {{ with $summary }}<div class="ranking-desc">{{ . }}</div>{{ end }}
+    {{ with $url -}}
+    <a href="{{ . }}" rel="sponsored nofollow noopener" target="_blank" class="ranking-cta">{{ $label }} →</a>
+    {{- end }}
+  </div>
+</div>

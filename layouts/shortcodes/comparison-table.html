@@ -1,0 +1,5 @@
+{{- $title := .Get "title" -}}
+<div class="comparison-table">
+  {{- with $title }}<p style="font-weight:700;color:var(--color-primary-dark);margin:0 0 8px;">{{ . }}</p>{{ end -}}
+  {{ .Inner | markdownify }}
+</div>

@@ -1,0 +1,26 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">{{ site.Title }}</div>
+    <div class="footer-desc">SIer PMOのキャリア戦略メディア | 国内大手SIer現役PMOが運営</div>
+    <div class="footer-links">
+      <a href="{{ site.Home.RelPermalink }}">HOME</a>
+      {{ range site.Menus.footer }}
+      <a href="{{ .URL }}">{{ .Name }}</a>
+      {{ end }}
+    </div>
+    <p class="footer-pr">※当サイトはアフィリエイトプログラムに参加しており、記事内のリンクから商品・サービスを購入・申込いただいた場合、当サイトに報酬が発生することがあります。</p>
+    <div class="footer-copy">&copy; {{ now.Format "2006" }} {{ site.Title }}. All rights reserved.</div>
+  </div>
+  {{ if not site.Params.disableImageZoom | default true }}
+  <script>
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+      margin: 24,
+      background: "rgba(0,0,0,0.5)",
+      scrollOffset: 0,
+    });
+  </script>
+  {{ end }}
+  {{ if templates.Exists "partials/extend-footer.html" }}
+    {{ partialCached "extend-footer.html" . }}
+  {{ end }}
+</footer>

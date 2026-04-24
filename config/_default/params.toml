@@ -1,49 +1,42 @@
 colorScheme = "ocean"
 defaultAppearance = "light"
-autoSwitchAppearance = true
+autoSwitchAppearance = false
 
-enableSearch = true
+enableSearch = false
 enableCodeCopy = true
 
 disableImageOptimization = false
 disableTextInHeader = false
+disableImageZoom = true
 
 [header]
   layout = "fixed"
 
 [footer]
-  showMenu = true
-  showCopyright = true
+  showMenu = false
+  showCopyright = false
   showThemeAttribution = false
-  showAppearanceSwitcher = true
-  showScrollToTop = true
+  showAppearanceSwitcher = false
+  showScrollToTop = false
 
 [homepage]
-  layout = "profile"
-  showRecent = true
-  showRecentItems = 5
-  showMoreLink = true
-  showMoreLinkDest = "/posts/"
-  cardView = true
-  cardViewScreenWidth = false
+  layout = "custom"
+  showRecent = false
+  cardView = false
 
 [article]
   showDate = true
   showDateUpdated = true
-  showAuthor = true
-  showHero = true
-  heroStyle = "basic"
-  showBreadcrumbs = true
+  showAuthor = false
+  showHero = false
+  showBreadcrumbs = false
   showDraftLabel = true
   showEdit = false
-  showWordCount = true
+  showWordCount = false
   showReadingTime = true
   showTableOfContents = true
-  showTaxonomies = true
-  showCategories = true
-  showTags = true
-  showRelated = true
-  relatedContentLimit = 3
+  showTaxonomies = false
+  showRelated = false
   showSummary = true
 
 [list]
@@ -70,3 +63,20 @@ disableTextInHeader = false
 
 [verification]
   # google = ""
+
+# お知らせ帯
+[announcementBar]
+  text = "【2026年4月】PMO向け転職エージェント比較ランキング更新"
+  url = "/posts/"
+
+# ヘッダーCTA
+[headerCta]
+  label = "🎯 転職相談"
+  url = "/posts/"
+
+# ヒーローCTA
+[heroCta]
+  primaryLabel = "おすすめ転職エージェントを見る"
+  primaryUrl = "/posts/"
+  secondaryLabel = "記事を探す"
+  secondaryUrl = "/posts/"

@@ -1,0 +1,17 @@
+{{- $title   := .Get "title" -}}
+{{- $body    := .Get "body" -}}
+{{- $url     := .Get "cta_url" -}}
+{{- $label   := .Get "cta_label" | default "詳細を見る" -}}
+{{- $variant := .Get "variant" | default "default" -}}
+{{- $eyebrow := .Get "eyebrow" -}}
+{{- $note    := .Get "note" -}}
+<div class="cta-box{{ if eq $variant "primary" }} variant-primary{{ end }}">
+  {{ with $eyebrow }}<div class="cta-box-eyebrow">{{ . }}</div>{{ end }}
+  {{ with $title }}<div class="cta-box-title">{{ . | markdownify }}</div>{{ end }}
+  {{ with $body }}<div class="cta-box-desc">{{ . | markdownify }}</div>{{ end }}
+  {{ with .Inner }}{{ . | markdownify }}{{ end }}
+  {{ with $url }}
+  <a href="{{ . }}" rel="sponsored nofollow noopener" target="_blank" class="cta-box-btn">{{ $label }} →</a>
+  {{ end }}
+  {{ with $note }}<div class="cta-box-note">{{ . }}</div>{{ end }}
+</div>

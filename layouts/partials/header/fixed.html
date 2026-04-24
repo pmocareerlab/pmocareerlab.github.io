@@ -1,0 +1,20 @@
+<header class="site-header">
+  <div class="header-inner">
+    <a href="{{ site.Home.RelPermalink }}" class="logo-wrap">
+      <div class="logo-icon">
+        <img src="{{ "logo/png/logo-icon-80.png" | relURL }}" alt="{{ site.Title }}" width="44" height="44" loading="eager">
+      </div>
+      <img src="{{ "logo/png/logo-wordmark-h40.png" | relURL }}" alt="{{ site.Title }}" class="logo-wordmark" height="34" loading="eager">
+    </a>
+
+    <nav class="global-nav" aria-label="グローバルナビゲーション">
+      {{ range site.Menus.main }}
+      <a href="{{ .URL }}"{{ if $.IsHome }}{{ else }}{{ if eq $.RelPermalink .URL }} aria-current="page"{{ end }}{{ end }}>{{ .Name }}</a>
+      {{ end }}
+    </nav>
+
+    {{ with site.Params.headerCta }}
+    <a href="{{ .url }}" class="header-cta">{{ .label }}</a>
+    {{ end }}
+  </div>
+</header>

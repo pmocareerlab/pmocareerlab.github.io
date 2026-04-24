@@ -1,0 +1,236 @@
+{{ $recentPages := where site.RegularPages "Section" "posts" | first 4 }}
+{{ $pickupPages := where site.RegularPages "Params.pickup" true | first 3 }}
+{{ if lt (len $pickupPages) 1 }}
+  {{ $pickupPages = where site.RegularPages "Section" "posts" | first 3 }}
+{{ end }}
+{{ $categories := site.Taxonomies.categories }}
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <span class="hero-eyebrow">✨ 国内大手SIer現役PMOが運営</span>
+      <h1>SIer PMOを辞めたくなった夜に<br><span class="marker">読むサイト。</span><span class="accent-dot"></span></h1>
+      <p class="hero-lead">
+        ビズリーチ・コンサル転職・フリーランスPMO — <strong>各ルートを現場目線で検証</strong>。<br>
+        あなたの「次のキャリア」の選択肢を、淡々と広げていきます。
+      </p>
+      <div class="hero-cta-group">
+        {{ with site.Params.heroCta }}
+        <a href="{{ .primaryUrl }}" class="btn-primary">🎯 {{ .primaryLabel }}</a>
+        <a href="{{ .secondaryUrl }}" class="btn-secondary">📝 {{ .secondaryLabel }}</a>
+        {{ else }}
+        <a href="/posts/" class="btn-primary">🎯 おすすめ転職エージェントを見る</a>
+        <a href="/posts/" class="btn-secondary">📝 記事を探す</a>
+        {{ end }}
+      </div>
+    </div>
+
+    <div class="hero-author-card">
+      <div class="hero-author-label">PROFILE</div>
+      <div class="hero-author-avatar">
+        <img src="{{ "logo/png/logo-icon-128.png" | relURL }}" alt="運営者" width="54" height="54" loading="eager">
+      </div>
+      <div class="hero-author-name">PMOキャリアラボ 運営者</div>
+      <div class="hero-author-role">国内大手SIer現役PMO</div>
+      <div class="hero-author-stats">
+        <div class="hero-author-stat">
+          <div class="hero-author-stat-num">13</div>
+          <div class="hero-author-stat-label">年の実働</div>
+        </div>
+        <div class="hero-author-stat">
+          <div class="hero-author-stat-num">5+</div>
+          <div class="hero-author-stat-label">年のPMO</div>
+        </div>
+        <div class="hero-author-stat">
+          <div class="hero-author-stat-num">4</div>
+          <div class="hero-author-stat-label">業界経験</div>
+        </div>
+      </div>
+      <div class="hero-author-voice">
+        現場の手触りを知るPMOとして、机上論ではないキャリア戦略をお届けします。
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- カテゴリ -->
+<section class="section section-bg-soft">
+  <div class="section-inner">
+    <div class="section-heading">
+      <div class="section-heading-en">Category</div>
+      <h2 class="section-heading-ja">カテゴリから探す</h2>
+    </div>
+    <div class="cat-grid">
+      <a href="/categories/sier脱出/" class="cat-card">
+        <div class="cat-icon c1">🚪</div>
+        <div class="cat-title">SIer脱出</div>
+        {{ with index $categories "sier脱出" }}<div class="cat-count">記事 {{ .Count }}本</div>{{ else }}<div class="cat-count">記事</div>{{ end }}
+      </a>
+      <a href="/categories/pmoキャリア/" class="cat-card">
+        <div class="cat-icon c2">📊</div>
+        <div class="cat-title">PMOキャリア</div>
+        {{ with index $categories "pmoキャリア" }}<div class="cat-count">記事 {{ .Count }}本</div>{{ else }}<div class="cat-count">記事</div>{{ end }}
+      </a>
+      <a href="/categories/コンサル転職/" class="cat-card">
+        <div class="cat-icon c3">💼</div>
+        <div class="cat-title">コンサル転職</div>
+        {{ with index $categories "コンサル転職" }}<div class="cat-count">記事 {{ .Count }}本</div>{{ else }}<div class="cat-count">記事</div>{{ end }}
+      </a>
+      <a href="/categories/フリーランス/" class="cat-card">
+        <div class="cat-icon c4">🎯</div>
+        <div class="cat-title">フリーランス</div>
+        {{ with index $categories "フリーランス" }}<div class="cat-count">記事 {{ .Count }}本</div>{{ else }}<div class="cat-count">記事</div>{{ end }}
+      </a>
+      <a href="/categories/学び・資格/" class="cat-card">
+        <div class="cat-icon c5">📚</div>
+        <div class="cat-title">学び・資格</div>
+        {{ with index $categories "学び・資格" }}<div class="cat-count">記事 {{ .Count }}本</div>{{ else }}<div class="cat-count">記事</div>{{ end }}
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ピラー記事 -->
+{{ with $pickupPages }}
+<section class="section">
+  <div class="section-inner">
+    <div class="section-heading">
+      <div class="section-heading-en">Pick Up</div>
+      <h2 class="section-heading-ja">編集部おすすめ記事</h2>
+    </div>
+    <div class="pillar-grid">
+      {{ range $i, $p := . }}
+      {{ $thumbClass := "" }}
+      {{ if eq $i 1 }}{{ $thumbClass = " t2" }}{{ else if eq $i 2 }}{{ $thumbClass = " t3" }}{{ end }}
+      {{ $emojis := slice "📖" "📊" "💼" }}
+      {{ $emoji := index $emojis $i | default "📖" }}
+      <a href="{{ $p.RelPermalink }}" class="pillar-card">
+        <div class="pillar-thumb{{ $thumbClass }}">
+          <span class="pillar-pick">🌟 PICKUP</span>
+          {{ $emoji }}
+        </div>
+        <div class="pillar-body">
+          {{ with $p.Params.categories }}<span class="pillar-cat">{{ index . 0 }}</span>{{ end }}
+          <div class="pillar-title">{{ $p.Title }}</div>
+          <div class="pillar-meta">📅 {{ $p.Date.Format "2006/01/02" }} · ⏱ {{ $p.ReadingTime }}分</div>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- CTAバナー -->
+<section class="section section-bg-soft">
+  <div class="cta-banner">
+    <h3>転職するか迷ったら、<br><span class="marker">まず情報収集から</span>始めよう</h3>
+    <p>登録は無料、相談内容は全て秘密厳守。現役PMOおすすめのエージェントを紹介中。</p>
+    <a href="/posts/" class="btn-primary">🎯 おすすめ転職相談を見る</a>
+  </div>
+</section>
+
+<!-- 最新記事 + サイドバー -->
+<section class="section">
+  <div class="recent-layout">
+    <div>
+      <div class="section-heading" style="text-align:left;margin-bottom:20px;">
+        <div class="section-heading-en" style="margin-left:0;">Latest</div>
+        <h2 class="section-heading-ja" style="text-align:left;">最新記事</h2>
+      </div>
+      <div class="recent-list">
+        {{ range $i, $p := $recentPages }}
+        {{ $tClass := "" }}
+        {{ if eq $i 1 }}{{ $tClass = " t2" }}{{ else if eq $i 2 }}{{ $tClass = " t3" }}{{ else if eq $i 3 }}{{ $tClass = " t4" }}{{ end }}
+        {{ $emojis := slice "💡" "📈" "🔥" "🚀" }}
+        {{ $emoji := index $emojis $i | default "💡" }}
+        <a href="{{ $p.RelPermalink }}" class="recent-item">
+          <div class="recent-thumb{{ $tClass }}">{{ $emoji }}</div>
+          <div class="recent-body">
+            {{ with $p.Params.categories }}<span class="recent-cat">{{ index . 0 }}</span>{{ end }}
+            <div class="recent-title">{{ $p.Title }}</div>
+            <div class="recent-meta">📅 {{ $p.Date.Format "2006/01/02" }} · ⏱ {{ $p.ReadingTime }}分で読めます</div>
+          </div>
+        </a>
+        {{ else }}
+        <p style="color:var(--color-text-muted);font-size:14px;">まだ記事がありません。</p>
+        {{ end }}
+      </div>
+    </div>
+
+    <aside>
+      <!-- 著者ミニカード -->
+      <div class="sidebar-block sidebar-author">
+        <div class="sidebar-title">👤 運営者</div>
+        <div class="sidebar-author-avatar">
+          <img src="{{ "logo/png/logo-icon-128.png" | relURL }}" alt="運営者" width="60" height="60" loading="lazy">
+        </div>
+        <div class="sidebar-author-name">PMOキャリアラボ</div>
+        <div class="sidebar-author-role">国内大手SIer現役PMO</div>
+        <a href="/about/" class="sidebar-author-btn">プロフィール →</a>
+      </div>
+
+      <!-- 人気記事 -->
+      {{ with hugo.Data.rankings.popular }}
+      <div class="sidebar-block">
+        <div class="sidebar-title">👑 よく読まれる記事</div>
+        <div class="sidebar-ranking">
+          {{ range $i, $item := . }}
+          {{ $badgeClass := "" }}
+          {{ if eq $i 0 }}{{ $badgeClass = " r1" }}{{ else if eq $i 1 }}{{ $badgeClass = " r2" }}{{ else if eq $i 2 }}{{ $badgeClass = " r3" }}{{ end }}
+          <a href="{{ $item.url }}" class="sidebar-rank-item">
+            <span class="rank-badge{{ $badgeClass }}">{{ add $i 1 }}</span>
+            {{ $item.title }}
+          </a>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+
+      <!-- カテゴリ -->
+      <div class="sidebar-block">
+        <div class="sidebar-title">📂 カテゴリ</div>
+        <div class="sidebar-cat-list">
+          {{ range $name, $tax := $categories }}
+          <a href="{{ "/categories/" | relURL }}{{ $name | urlize }}/" class="sidebar-cat-item">
+            {{ $name }} <span class="sidebar-cat-count">{{ $tax.Count }}</span>
+          </a>
+          {{ else }}
+          <span class="sidebar-cat-item" style="color:var(--color-text-muted);">カテゴリなし</span>
+          {{ end }}
+        </div>
+      </div>
+
+      <!-- バナー -->
+      <a href="/posts/" class="sidebar-banner">
+        <div class="sidebar-banner-eyebrow">おすすめサービス</div>
+        <div class="sidebar-banner-title">🎯 PMO向け<br>転職相談</div>
+        <div class="sidebar-banner-sub">登録3分・完全無料</div>
+      </a>
+    </aside>
+  </div>
+</section>
+
+<!-- 著者セクション -->
+<section class="author-section">
+  <div class="author-card">
+    <div class="author-avatar-lg">
+      <img src="{{ "logo/png/logo-icon-200.png" | relURL }}" alt="PMOキャリアラボ 運営者" width="90" height="90" loading="lazy">
+    </div>
+    <div>
+      <h3 class="author-info-name">PMOキャリアラボ 運営者</h3>
+      <div class="author-info-role">国内大手SIer現役PMO</div>
+      <p class="author-info-desc">
+        国内大手SIer所属。運用保守・品質保証（テスト）を経て、小規模案件では要件定義から納品までを担当。<span class="marker">放送・通信・エンタメ・人材など複数業界</span>のシステム現場を経験したのち、PMOへ転身し現在に至る。IT業界実働13年、うちPMO経験5〜6年。
+      </p>
+      <div class="author-badges">
+        <span class="author-badge">🏢 国内大手SIer所属</span>
+        <span class="author-badge">📊 PMO 5-6年</span>
+        <span class="author-badge">⏱ IT業界実働13年</span>
+        <span class="author-badge">🎯 現場経験あり</span>
+      </div>
+      <a href="/about/" class="author-btn">詳しいプロフィールを見る →</a>
+    </div>
+  </div>
+</section>

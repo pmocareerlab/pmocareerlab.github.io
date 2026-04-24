@@ -1,34 +1,39 @@
 [[main]]
-  name = "記事一覧"
-  pageRef = "/posts"
+  name = "SIer脱出"
+  url = "/categories/sier脱出/"
   weight = 10
 
 [[main]]
-  name = "カテゴリ"
-  pageRef = "/categories"
+  name = "PMOキャリア"
+  url = "/categories/pmoキャリア/"
   weight = 20
 
 [[main]]
-  name = "このサイトについて"
-  pageRef = "/about"
+  name = "コンサル転職"
+  url = "/categories/コンサル転職/"
   weight = 30
 
 [[main]]
-  name = "お問い合わせ"
-  pageRef = "/contact"
+  name = "フリーランス"
+  url = "/categories/フリーランス/"
   weight = 40
+
+[[main]]
+  name = "プロフィール"
+  url = "/about/"
+  weight = 50
 
 [[footer]]
   name = "プライバシーポリシー"
-  pageRef = "/privacy"
+  url = "/privacy/"
   weight = 10
 
 [[footer]]
   name = "免責事項"
-  pageRef = "/disclaimer"
+  url = "/disclaimer/"
   weight = 20
 
 [[footer]]
   name = "お問い合わせ"
-  pageRef = "/contact"
+  url = "/contact/"
   weight = 30

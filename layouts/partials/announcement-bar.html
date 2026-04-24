@@ -1,0 +1,7 @@
+{{ with site.Params.announcementBar }}
+<div class="top-notice-bar">
+  <span class="new-badge">NEW</span>
+  {{ .text | safeHTML }}
+  {{ with .url }} <a href="{{ . }}">→ 記事を読む</a>{{ end }}
+</div>
+{{ end }}

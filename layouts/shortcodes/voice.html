@@ -1,0 +1,21 @@
+{{- $speaker := .Get "speaker" | default "reader" -}}
+{{- $avatar  := .Get "avatar" -}}
+{{- $name    := .Get "name" -}}
+{{- $isOwner := eq $speaker "owner" -}}
+{{- $defaultName := cond $isOwner "運営者" "読者" -}}
+{{- $displayName := $name | default $defaultName -}}
+<div class="voice{{ if $isOwner }} right{{ end }}">
+  <div class="voice-col">
+    <div class="voice-avatar{{ if not $isOwner }} user{{ end }}">
+      {{- if $avatar -}}
+        <img src="{{ $avatar }}" alt="{{ $displayName }}" loading="lazy">
+      {{- else if $isOwner -}}
+        <img src="/logo/png/logo-icon-128.png" alt="{{ $displayName }}" loading="lazy">
+      {{- else -}}
+        👤
+      {{- end -}}
+    </div>
+    <div class="voice-name">{{ $displayName }}</div>
+  </div>
+  <div class="voice-bubble" aria-label="{{ $displayName }}">{{ .Inner | markdownify }}</div>
+</div>

@@ -1,0 +1,141 @@
+{{ define "main" }}
+{{ $categories := .Params.categories }}
+{{ $relatedPages := where site.RegularPages "Section" "posts" | first 6 }}
+{{ $relatedPages = where $relatedPages ".RelPermalink" "ne" .RelPermalink | first 3 }}
+
+<div class="article-layout">
+  <article class="article-main">
+
+    <!-- パンくず -->
+    <div class="breadcrumb">
+      <a href="{{ site.Home.RelPermalink }}">HOME</a>
+      {{ with $categories }}
+      <span>›</span>
+      <a href="{{ "/categories/" | relURL }}{{ index . 0 | urlize }}/">{{ index . 0 }}</a>
+      {{ end }}
+      <span>›</span>
+      {{ .Title | truncate 30 "…" }}
+    </div>
+
+    <!-- 記事ヘッダー -->
+    <header class="article-header">
+      {{ with $categories }}
+      <span class="article-category">{{ index . 0 }}</span>
+      {{ end }}
+      <h1 class="article-title">{{ .Title }}</h1>
+      <div class="article-meta">
+        <span class="article-meta-item">📅 公開：{{ .Date.Format "2006/01/02" }}</span>
+        {{ if not .Lastmod.IsZero }}
+        {{ if ne (.Lastmod.Format "2006/01/02") (.Date.Format "2006/01/02") }}
+        <span class="article-meta-item">🔄 更新：{{ .Lastmod.Format "2006/01/02" }}</span>
+        {{ end }}
+        {{ end }}
+        <span class="article-meta-item">⏱ 約{{ .ReadingTime }}分で読めます</span>
+        <span class="article-meta-item">✍ PMOキャリアラボ</span>
+      </div>
+    </header>
+
+    <!-- 目次 -->
+    {{ if and (site.Params.article.showTableOfContents | default true) (in .TableOfContents "<ul") }}
+    <div class="toc">
+      <div class="toc-title">📋 目次</div>
+      {{ .TableOfContents }}
+    </div>
+    {{ end }}
+
+    <!-- 本文 -->
+    <div class="article-body">
+      {{ .Content }}
+    </div>
+
+    <!-- 著者カード -->
+    <div class="article-author">
+      <div class="article-author-avatar">
+        <img src="{{ "logo/png/logo-icon-128.png" | relURL }}" alt="PMOキャリアラボ 運営者" width="60" height="60" loading="lazy">
+      </div>
+      <div>
+        <div class="article-author-name">PMOキャリアラボ 運営者</div>
+        <div class="article-author-role">国内大手SIer現役PMO</div>
+        <div class="article-author-desc">
+          国内大手SIer所属。運用保守・品質保証を経て小規模案件の要件定義から納品まで担当、その後PMOへ転身。放送・通信・エンタメ・人材など複数業界のシステム現場を経験。<span class="marker">IT業界実働13年、うちPMO経験5〜6年</span>。机上論ではない実体験ベースの発信を心がけています。
+        </div>
+      </div>
+    </div>
+
+    <!-- 関連記事 -->
+    {{ with $relatedPages }}
+    <div class="related-articles">
+      <div class="related-title">📚 合わせて読みたい</div>
+      <div class="related-grid">
+        {{ range . }}
+        <a href="{{ .RelPermalink }}" class="related-card">
+          {{ with .Params.categories }}<div class="related-card-cat">{{ index . 0 }}</div>{{ end }}
+          <div class="related-card-title">{{ .Title }}</div>
+        </a>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+
+  </article>
+
+  <!-- サイドバー -->
+  <aside class="article-sidebar">
+    <div class="sticky-wrap">
+
+      <!-- 著者ミニ -->
+      <div class="sidebar-block sidebar-author">
+        <div class="sidebar-title">👤 運営者</div>
+        <div class="sidebar-author-avatar">
+          <img src="{{ "logo/png/logo-icon-128.png" | relURL }}" alt="運営者" width="60" height="60" loading="lazy">
+        </div>
+        <div class="sidebar-author-name">PMOキャリアラボ</div>
+        <div class="sidebar-author-role">国内大手SIer現役PMO</div>
+        <a href="/about/" class="sidebar-author-btn">プロフィール →</a>
+      </div>
+
+      <!-- 人気記事 -->
+      {{ with hugo.Data.rankings.popular }}
+      <div class="sidebar-block">
+        <div class="sidebar-title">👑 よく読まれる記事</div>
+        <div class="sidebar-ranking">
+          {{ range $i, $item := . }}
+          {{ $badgeClass := "" }}
+          {{ if eq $i 0 }}{{ $badgeClass = " r1" }}{{ else if eq $i 1 }}{{ $badgeClass = " r2" }}{{ else if eq $i 2 }}{{ $badgeClass = " r3" }}{{ end }}
+          <a href="{{ $item.url }}" class="sidebar-rank-item">
+            <span class="rank-badge{{ $badgeClass }}">{{ add $i 1 }}</span>
+            {{ $item.title }}
+          </a>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+
+      <!-- カテゴリ -->
+      <div class="sidebar-block">
+        <div class="sidebar-title">📂 カテゴリ</div>
+        <div class="sidebar-cat-list">
+          {{ range $name, $tax := site.Taxonomies.categories }}
+          <a href="{{ "/categories/" | relURL }}{{ $name | urlize }}/" class="sidebar-cat-item">
+            {{ $name }} <span class="sidebar-cat-count">{{ $tax.Count }}</span>
+          </a>
+          {{ end }}
+        </div>
+      </div>
+
+      <!-- バナー -->
+      <a href="/posts/" class="sidebar-banner">
+        <div class="sidebar-banner-eyebrow">おすすめサービス</div>
+        <div class="sidebar-banner-title">🎯 PMO向け<br>転職相談</div>
+        <div class="sidebar-banner-sub">登録3分・完全無料</div>
+      </a>
+
+    </div>
+  </aside>
+</div>
+
+<!-- モバイル固定CTA -->
+<div class="mobile-sticky-cta">
+  <a href="/posts/">📱 無料でキャリア相談する</a>
+</div>
+{{ end }}

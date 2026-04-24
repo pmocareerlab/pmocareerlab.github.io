@@ -1,0 +1,8 @@
+{{- $type  := .Get "type" | default "info" -}}
+{{- $title := .Get "title" -}}
+{{- $icons := dict "warning" "⚠️" "info" "💡" "success" "✅" "experience" "📝" -}}
+{{- $icon  := index $icons $type | default "💡" -}}
+<div class="note note-{{ $type }}">
+  <div class="note-title">{{ $icon }} {{ with $title }}{{ . }}{{ else }}{{ if eq $type "warning" }}注意{{ else if eq $type "success" }}ポイント{{ else if eq $type "experience" }}現場から一言{{ else }}ポイント{{ end }}{{ end }}</div>
+  {{ .Inner | markdownify }}
+</div>
