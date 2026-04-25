@@ -23,9 +23,14 @@
   url = "/about/"
   weight = 50
 
+[[main]]
+  name = "お問い合わせ"
+  url = "/contact/"
+  weight = 90
+
 [[footer]]
   name = "プライバシーポリシー"
-  url = "/privacy/"
+  url = "/privacy-policy/"
   weight = 10
 
 [[footer]]
