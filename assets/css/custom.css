@@ -1111,14 +1111,14 @@ nav.global-nav a:hover { text-decoration: none; color: var(--color-primary); }
   padding: 12px;
   font-size: 13px;
   font-weight: 700;
-  text-align: center;
+  text-align: center !important;
   border-right: 1px solid rgba(255, 255, 255, 0.15);
 }
 .comparison-table table th:last-child { border-right: none; }
 .comparison-table table td {
   padding: 12px;
   font-size: 13px;
-  text-align: center;
+  text-align: center !important;
   border-bottom: 1px solid var(--color-border);
   border-right: 1px solid var(--color-border);
 }
