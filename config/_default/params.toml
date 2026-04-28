@@ -64,10 +64,6 @@ disableImageZoom = true
 [verification]
   # google = ""
 
-# お知らせ帯
-[announcementBar]
-  text = "【2026年4月】PMO向け転職エージェント比較ランキング更新"
-  url = "/posts/"
 
 # ヘッダーCTA
 [headerCta]

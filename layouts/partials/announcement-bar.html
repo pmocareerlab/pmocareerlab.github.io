@@ -1,7 +1,8 @@
-{{ with site.Params.announcementBar }}
+{{- $latest := index (where site.RegularPages "Section" "posts") 0 -}}
+{{- with $latest -}}
 <div class="top-notice-bar">
   <span class="new-badge">NEW</span>
-  {{ .text | safeHTML }}
-  {{ with .url }} <a href="{{ . }}">→ 記事を読む</a>{{ end }}
+  {{ .Title }}
+  <a href="{{ .RelPermalink }}">→ 記事を読む</a>
 </div>
-{{ end }}
+{{- end -}}
