@@ -1101,8 +1101,10 @@ nav.global-nav a:hover { text-decoration: none; color: var(--color-primary); }
   background: #fff;
 }
 .comparison-table table {
-  width: 100%;
+  display: table !important;
+  width: 100% !important;
   border-collapse: collapse;
+  table-layout: auto;
   min-width: 560px;
 }
 .comparison-table table th {
@@ -1131,6 +1133,16 @@ nav.global-nav a:hover { text-decoration: none; color: var(--color-primary); }
   background: var(--color-marker);
   padding: 2px 6px;
   border-radius: 3px;
+}
+@media (max-width: 640px) {
+  .comparison-table {
+    overflow-x: auto;
+  }
+  .comparison-table table {
+    display: table !important;
+    width: 100% !important;
+    min-width: 480px;
+  }
 }
 
 /* ========== Shortcode: ranking-box ========== */
