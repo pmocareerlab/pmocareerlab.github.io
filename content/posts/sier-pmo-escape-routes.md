@@ -257,8 +257,16 @@ SIer PMOが取れる4つの進路を比較しました。
 
 まずは1社、エージェントに登録してみてください。それだけで、選択肢は確実に広がります。
 
+{{< cta-box
+  title="どのエージェントに登録すればいいか迷っているなら"
+  body="SIer PMO経験者に向いているエージェント3社を、公式情報と利用者の評価をもとに比較しました。登録前の参考にしてください。"
+  cta_url="/posts/pmo-transfer-agent-comparison/"
+  cta_label="PMO転職エージェント比較記事を読む"
+/>}}
+
 ---
 
 **関連記事：**
 - [PMOからコンサルへ転職する現実：年収・業務・難易度を徹底分析](/posts/pmo-to-consultant-reality/)
 - [PMO年収の実態：経験年数・企業規模・業界別に徹底解説](/posts/pmo-salary-reality/)
+- [SIer PMO向け転職エージェントおすすめ比較【2026年版】](/posts/pmo-transfer-agent-comparison/)

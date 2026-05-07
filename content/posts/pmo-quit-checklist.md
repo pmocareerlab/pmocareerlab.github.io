@@ -151,9 +151,17 @@ PMOを辞めたい理由は、大きく3つに分類できます。**パター�
 
 転職市場を見てみることは、決断の前の「情報収集」です。知った上で残留を選ぶのも、十分に賢い選択です。
 
+{{< cta-box
+  title="転職活動を始めるなら：エージェント選びで迷わないために"
+  body="PMO経験者が転職エージェントを選ぶ際の3つの軸と、おすすめ3社を比較しています。どこに登録するか迷っている人はまずこちらを読んでください。"
+  cta_url="/posts/pmo-transfer-agent-comparison/"
+  cta_label="PMO転職エージェント比較記事を読む"
+/>}}
+
 ---
 
 **あわせて読みたい：**
 - [SIer PMOがきついと感じる6つの理由【現役PMOが語る限界と出口】](/posts/sier-pmo-tough-reasons/)
 - [SIer PMOからの「脱出ルート」4選：コンサル・事業会社・フリーランス・社内残留を徹底比較](/posts/sier-pmo-escape-routes/)
 - [PMO年収の実態：経験年数・企業規模・業界別に徹底解説](/posts/pmo-salary-reality/)
+- [SIer PMO向け転職エージェントおすすめ比較【2026年版】](/posts/pmo-transfer-agent-comparison/)

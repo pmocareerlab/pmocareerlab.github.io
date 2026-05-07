@@ -218,8 +218,16 @@ PMO経験を書くとき、最もよくある失敗が「業務内容の羅列�
 
 まず1社、相談してみてください。
 
+{{< cta-box
+  title="コンサル転職に強いエージェントを比較で確認する"
+  body="PMO経験者がコンサル転職を目指す際のエージェント選びを解説しました。AXIS Agentをはじめ3社を比較しています。"
+  cta_url="/posts/pmo-transfer-agent-comparison/"
+  cta_label="PMO転職エージェント比較記事を読む"
+/>}}
+
 ---
 
 **関連記事：**
 - [SIer PMOからの「脱出ルート」4選：コンサル含む4進路を徹底比較](/posts/sier-pmo-escape-routes/)
+- [SIer PMO向け転職エージェントおすすめ比較【2026年版】](/posts/pmo-transfer-agent-comparison/)
 - [PMO年収の実態：経験年数・企業規模・業界別に徹底解説](/posts/pmo-salary-reality/)

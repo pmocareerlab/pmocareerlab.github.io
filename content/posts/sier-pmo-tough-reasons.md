@@ -131,8 +131,16 @@ SIer PMOのきつさは、あなたの弱さではなく、**多重請負・評�
 
 まず「自分の外の世界」を知ることから始めてください。転職エージェントに登録して市場を見てみるだけで、今の状況が客観視できます。
 
+{{< cta-box
+  title="どのエージェントに登録すればいいか迷っているなら"
+  body="PMO経験者が転職エージェントを選ぶ際の基準と、おすすめ3社を比較しています。登録前の参考にしてください。"
+  cta_url="/posts/pmo-transfer-agent-comparison/"
+  cta_label="PMO転職エージェント比較記事を読む"
+/>}}
+
 ---
 
 **あわせて読みたい：**
 - [SIer PMOからの「脱出ルート」4選：コンサル・事業会社・フリーランス・社内残留を徹底比較](/posts/sier-pmo-escape-routes/)
 - [PMO年収の実態：経験年数・企業規模・業界別に徹底解説](/posts/pmo-salary-reality/)
+- [SIer PMO向け転職エージェントおすすめ比較【2026年版】](/posts/pmo-transfer-agent-comparison/)

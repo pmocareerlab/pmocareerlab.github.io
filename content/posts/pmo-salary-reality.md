@@ -192,8 +192,16 @@ PMO年収の構造をまとめると：
 
 「まず自分の市場価値を知る」ところから始めてください。スカウト型サービスへの登録は無料で、転職活動を正式に始めることにはなりません。届いたスカウトの年収帯を見るだけで、現職との乖離が数字で見えてきます。
 
+{{< cta-box
+  title="年収アップを目指すならエージェント選びが最初の分岐点"
+  body="PMO経験者が年収アップ転職を実現するためのエージェント選び。レバテックキャリア・AXIS Agent・ギークリーを公式情報と利用者の評価をもとに比較しています。"
+  cta_url="/posts/pmo-transfer-agent-comparison/"
+  cta_label="PMO転職エージェント比較記事を読む"
+/>}}
+
 ---
 
 **関連記事：**
 - [SIer PMOからの「脱出ルート」4選：年収を上げる4つの進路を比較](/posts/sier-pmo-escape-routes/)
 - [PMOからコンサルへ転職する現実：年収・業務・難易度を徹底分析](/posts/pmo-to-consultant-reality/)
+- [SIer PMO向け転職エージェントおすすめ比較【2026年版】](/posts/pmo-transfer-agent-comparison/)
