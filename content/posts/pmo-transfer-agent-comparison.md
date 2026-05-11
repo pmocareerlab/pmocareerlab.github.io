@@ -1,7 +1,7 @@
 ---
 title: "PMO転職エージェントおすすめ比較【2026年版】SIer PMO経験者向け3選"
 date: 2026-05-07
-draft: true
+draft: false
 categories: ["転職実務"]
 pickup: false
 summary: "SIer PMO経験者に向けた転職エージェント比較。レバテックキャリア・AXIS Agent・ギークリーを公式情報と第三者評価をもとに徹底解説。PMOスキルが正しく評価されるエージェントの選び方も紹介。"
@@ -71,7 +71,7 @@ SIer PMO経験者がサービスを選ぶ際、以下の3軸で評価するこ�
   tagline="IT転職特化・求人数No.1クラス"
   rating="4.3"
   summary="IT・Web業界の転職に特化した国内最大級のエージェント。PMO・PM・ITコンサルタントの求人を幅広く保有。IT職種に精通した専任アドバイザーが担当するため、PMOのスキルセットを正確に評価してもらいやすい環境が整っている。"
-  cta_url="#"
+  cta_url="https://career.levtech.jp/"
   cta_label="レバテックキャリア公式サイトを見る"
 >}}
 
@@ -81,7 +81,7 @@ SIer PMO経験者がサービスを選ぶ際、以下の3軸で評価するこ�
   tagline="コンサル・ハイクラス転職に特化"
   rating="4.2"
   summary="コンサルティング業界への転職支援に強みを持つハイクラス特化型エージェント。SIer PMOからITコンサル・経営コンサルへのキャリアチェンジを検討している人に特に向いている。年収600万円以上の転職支援実績が豊富で、担当者のコンサル業界知識が深い。"
-  cta_url="#"
+  cta_url="https://www.axc.ne.jp/"
   cta_label="AXIS Agent公式サイトを見る"
 >}}
 
@@ -91,7 +91,7 @@ SIer PMO経験者がサービスを選ぶ際、以下の3軸で評価するこ�
   tagline="IT・Web業界専門の転職エージェント"
   rating="4.0"
   summary="IT・Web・ゲーム業界に特化した転職エージェント。PMO・ITプロジェクトマネージャーの求人を多数保有しており、年収500〜700万円帯の転職実績が豊富。来社・オンライン両方で面談対応しており、丁寧なサポートが利用者から高評価を得ている。"
-  cta_url="#"
+  cta_url="https://www.geekly.co.jp/"
   cta_label="ギークリー公式サイトを見る"
 >}}
 
@@ -101,7 +101,7 @@ SIer PMO経験者がサービスを選ぶ際、以下の3軸で評価するこ�
 
 ### ① レバテックキャリア
 
-{{< review-card service="レバテックキャリア" rating="4.3" cta_url="#" cta_label="レバテックキャリアに無料登録する" >}}
+{{< review-card service="レバテックキャリア" rating="4.3" cta_url="https://career.levtech.jp/" cta_label="レバテックキャリアに無料登録する" >}}
 
 **こんな人向き**
 - IT・PMO経験を活かした転職先を幅広く比較したい
@@ -128,7 +128,7 @@ SIer PMO経験者がサービスを選ぶ際、以下の3軸で評価するこ�
 
 ### ② AXIS Agent（アクシスコンサルティング）
 
-{{< review-card service="AXIS Agent" rating="4.2" cta_url="#" cta_label="AXIS Agentに無料登録する" >}}
+{{< review-card service="AXIS Agent" rating="4.2" cta_url="https://www.axc.ne.jp/" cta_label="AXIS Agentに無料登録する" >}}
 
 **こんな人向き**
 - PMO経験を活かしてコンサルティング業界に転職したい
@@ -155,7 +155,7 @@ SIer PMOが持つ「プロジェクト横断的な管理スキル・ステーク
 
 ### ③ ギークリー
 
-{{< review-card service="ギークリー" rating="4.0" cta_url="#" cta_label="ギークリーに無料登録する" >}}
+{{< review-card service="ギークリー" rating="4.0" cta_url="https://www.geekly.co.jp/" cta_label="ギークリーに無料登録する" >}}
 
 **こんな人向き**
 - IT業界内での転職（年収500〜700万円帯）を検討している
@@ -261,7 +261,7 @@ PMO経験は市場において需要があります。問題は「自分のス�
   eyebrow="まずここから始める"
   title="IT転職ならレバテックキャリアに無料登録"
   body="IT・PMO・PM職に特化した転職エージェント。登録は3〜5分、面談は完全無料。求人市場の全体像を把握するところから始めましょう。"
-  cta_url="#"
+  cta_url="https://career.levtech.jp/"
   cta_label="レバテックキャリアに無料登録する"
   note="※転職しなくても費用は一切かかりません"
 />}}
@@ -270,7 +270,7 @@ PMO経験は市場において需要があります。問題は「自分のス�
   eyebrow="コンサル転職を目指すなら"
   title="SIer PMO→コンサル転職はAXIS Agentで"
   body="コンサルティング業界専門の転職エージェント。PMO経験を活かしたITコンサル・PMOコンサルへの転職実績が豊富です。"
-  cta_url="#"
+  cta_url="https://www.axc.ne.jp/"
   cta_label="AXIS Agentに無料登録する"
   note="※年収600万円以上のハイクラス求人多数"
 />}}
