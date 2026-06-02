@@ -1,7 +1,7 @@
 ---
 title: "SIer PMO 10年続けた先に何がある？3つの分岐点と現実"
 date: 2026-06-07
-draft: true
+draft: false
 categories: ["PMOキャリア"]
 pickup: false
 summary: "SIer PMOとして10年働いた先に何があるのか。管理職・継続・転職の3つのルートをキャリアの現実から整理します。30代で知っておきたい分岐点の話です。"

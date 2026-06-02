@@ -1,7 +1,7 @@
 ---
 title: "SIer PMOを辞めるべき8つのサイン【迷ったら確認する】"
 date: 2026-05-31
-draft: true
+draft: false
 categories: ["SIer脱出"]
 pickup: false
 summary: "「これが普通なのかな」と迷い続けているSIer PMOへ。転職を本気で考えるべき8つのサインを整理しました。当てはまる数で現状を客観視してください。"
