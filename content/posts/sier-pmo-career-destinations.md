@@ -1,7 +1,7 @@
 ---
 title: "SIer PMOにおすすめの転職先7選【経験・年齢別に向いている職種】"
 date: 2026-07-12T09:00:00+09:00
-draft: true
+draft: false
 categories: ["SIer脱出"]
 pickup: false
 summary: "SIer PMOが転職を考えるとき、どこに行けばいいのか。ITコンサル・社内SE・フリーランス・Web系など7つの転職先を、経験年数・年齢別の向き不向きまで解説します。"
