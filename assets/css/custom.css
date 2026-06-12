@@ -177,14 +177,15 @@ img { max-width: 100%; height: auto; }
 .logo-icon img { width: 44px; height: 44px; object-fit: contain; display: block; }
 .logo-wordmark { height: 34px; width: auto; display: block; }
 
-nav.global-nav { display: flex; align-items: center; gap: 26px; }
+nav.global-nav { display: flex; align-items: center; gap: 18px; }
 nav.global-nav a {
   color: var(--color-text);
-  font-size: 14px;
+  font-size: 13.5px;
   font-weight: 600;
   position: relative;
   padding: 4px 0;
   text-decoration: none;
+  white-space: nowrap;
 }
 nav.global-nav a::after {
   content: '';
@@ -218,6 +219,57 @@ nav.global-nav a:hover { text-decoration: none; color: var(--color-primary); }
   text-decoration: none;
   box-shadow: 0 1px 0 var(--color-accent-dark);
   transform: translateY(2px);
+}
+
+/* ハンバーガーメニュー（モバイルのみ表示） */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  background: none;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.nav-toggle-bar {
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--color-primary);
+  transition: transform 0.2s, opacity 0.2s;
+}
+.nav-toggle.is-open .nav-toggle-bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.nav-toggle.is-open .nav-toggle-bar:nth-child(2) { opacity: 0; }
+.nav-toggle.is-open .nav-toggle-bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  background: #fff;
+  border-top: 1px solid var(--color-border, #e5e7eb);
+  padding: 8px 20px 14px;
+}
+.mobile-nav[hidden] { display: none !important; }
+.mobile-nav a {
+  display: block;
+  padding: 12px 4px;
+  color: var(--color-text);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px dashed var(--color-border, #e5e7eb);
+}
+.mobile-nav a:last-child { border-bottom: 0; }
+.mobile-nav a:hover { color: var(--color-primary); text-decoration: none; }
+@media (max-width: 960px) {
+  .nav-toggle { display: flex; }
+  .mobile-nav:not([hidden]) { display: flex; }
 }
 
 /* ========== Section Utilities ========== */
@@ -393,7 +445,7 @@ nav.global-nav a:hover { text-decoration: none; color: var(--color-primary); }
 /* ========== Category Grid ========== */
 .cat-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 14px;
 }
 .cat-card {
@@ -428,6 +480,7 @@ nav.global-nav a:hover { text-decoration: none; color: var(--color-primary); }
 .cat-icon.c3 { background: linear-gradient(135deg, #F59E0B, #D97706); }
 .cat-icon.c4 { background: linear-gradient(135deg, #14B8A6, #0F766E); }
 .cat-icon.c5 { background: linear-gradient(135deg, #8B5CF6, #6D28D9); }
+.cat-icon.c6 { background: linear-gradient(135deg, #EF4444, #B91C1C); }
 .cat-title {
   font-size: 14px;
   font-weight: 700;

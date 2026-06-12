@@ -9,6 +9,11 @@
   weight = 20
 
 [[main]]
+  name = "転職実務"
+  url = "/categories/転職実務/"
+  weight = 25
+
+[[main]]
   name = "コンサル転職"
   url = "/categories/コンサル転職/"
   weight = 30

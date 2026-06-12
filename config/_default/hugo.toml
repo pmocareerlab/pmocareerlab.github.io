@@ -1,5 +1,6 @@
 baseURL = "https://pmocareerlab.com/"
 defaultContentLanguage = "ja"
+hasCJKLanguage = true
 enableRobotsTXT = true
 summaryLength = 70
 buildDrafts = false

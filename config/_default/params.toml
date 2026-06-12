@@ -2,6 +2,9 @@ colorScheme = "ocean"
 defaultAppearance = "light"
 autoSwitchAppearance = false
 
+# OGP/Twitterカードのデフォルト画像（記事個別の images 指定があればそちらが優先）
+images = ["og-default.png"]
+
 enableSearch = false
 enableCodeCopy = true
 
@@ -67,12 +70,12 @@ disableImageZoom = true
 
 # ヘッダーCTA
 [headerCta]
-  label = "🎯 転職相談"
-  url = "/posts/"
+  label = "🎯 エージェント比較"
+  url = "/posts/pmo-transfer-agent-comparison/"
 
 # ヒーローCTA
 [heroCta]
   primaryLabel = "おすすめ転職エージェントを見る"
-  primaryUrl = "/posts/"
+  primaryUrl = "/posts/pmo-transfer-agent-comparison/"
   secondaryLabel = "記事を探す"
   secondaryUrl = "/posts/"

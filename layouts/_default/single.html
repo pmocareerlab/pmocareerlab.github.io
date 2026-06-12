@@ -1,7 +1,16 @@
 {{ define "main" }}
 {{ $categories := .Params.categories }}
-{{ $relatedPages := where site.RegularPages "Section" "posts" | first 6 }}
-{{ $relatedPages = where $relatedPages ".RelPermalink" "ne" .RelPermalink | first 3 }}
+{{ $allPosts := where site.RegularPages "Section" "posts" }}
+{{ $allPosts = where $allPosts "RelPermalink" "ne" .RelPermalink }}
+{{ $relatedPages := $allPosts }}
+{{ with $categories }}
+  {{ $relatedPages = where $allPosts "Params.categories" "intersect" . }}
+{{ end }}
+{{ $relatedPages = $relatedPages | first 3 }}
+{{ if lt (len $relatedPages) 3 }}
+  {{ $fill := complement $relatedPages $allPosts | first (sub 3 (len $relatedPages)) }}
+  {{ $relatedPages = $relatedPages | append $fill }}
+{{ end }}
 
 <div class="article-layout">
   <article class="article-main">
@@ -124,10 +133,10 @@
       </div>
 
       <!-- バナー -->
-      <a href="/posts/" class="sidebar-banner">
-        <div class="sidebar-banner-eyebrow">おすすめサービス</div>
-        <div class="sidebar-banner-title">🎯 PMO向け<br>転職相談</div>
-        <div class="sidebar-banner-sub">登録3分・完全無料</div>
+      <a href="/posts/pmo-transfer-agent-comparison/" class="sidebar-banner">
+        <div class="sidebar-banner-eyebrow">現役PMOが徹底比較</div>
+        <div class="sidebar-banner-title">🎯 PMO向け<br>転職エージェント3選</div>
+        <div class="sidebar-banner-sub">比較記事を読む →</div>
       </a>
 
     </div>
@@ -135,7 +144,9 @@
 </div>
 
 <!-- モバイル固定CTA -->
+{{ if ne .RelPermalink "/posts/pmo-transfer-agent-comparison/" }}
 <div class="mobile-sticky-cta">
-  <a href="/posts/">📱 無料でキャリア相談する</a>
+  <a href="/posts/pmo-transfer-agent-comparison/">🎯 おすすめエージェント比較を見る</a>
 </div>
+{{ end }}
 {{ end }}
