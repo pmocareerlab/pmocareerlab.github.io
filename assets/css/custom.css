@@ -1198,6 +1198,48 @@ nav.global-nav a:hover { text-decoration: none; color: var(--color-primary); }
   }
 }
 
+/* ========== 本文中の生Markdownテーブル ========== */
+/* .article-body 直下の table のみ対象（comparison-table 等ショートコードは入れ子なので非対象） */
+.article-body > table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  border: 2px solid var(--color-primary);
+  background: #fff;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.article-body > table thead th {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 11px 14px;
+  font-weight: 700;
+  text-align: left;
+  border-right: 1px solid rgba(255, 255, 255, 0.18);
+}
+.article-body > table thead th:last-child { border-right: none; }
+.article-body > table td {
+  padding: 11px 14px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
+}
+.article-body > table td:last-child { border-right: none; }
+.article-body > table tbody tr:last-child td,
+.article-body > table tr:last-child td { border-bottom: none; }
+.article-body > table tbody tr:nth-child(even) { background: var(--color-cream); }
+/* 1列目（項目名）を少し強調 */
+.article-body > table tbody td:first-child { font-weight: 600; }
+@media (max-width: 640px) {
+  .article-body > table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
 /* ========== Shortcode: ranking-box ========== */
 .ranking-wrap { margin: 32px 0; }
 .ranking-box {
