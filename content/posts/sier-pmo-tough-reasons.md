@@ -144,3 +144,4 @@ SIer PMOのきつさは、あなたの弱さではなく、**多重請負・評�
 - [SIer PMOからの「脱出ルート」4選：コンサル・事業会社・フリーランス・社内残留を徹底比較](/posts/sier-pmo-escape-routes/)
 - [PMO年収の実態：経験年数・企業規模・業界別に徹底解説](/posts/pmo-salary-reality/)
 - [SIer PMO向け転職エージェントおすすめ比較【2026年版】](/posts/pmo-transfer-agent-comparison/)
+- [SIer PMOに向いてない人の特徴5つと、その後の選択肢](/posts/sier-pmo-not-suited/)
