@@ -1,6 +1,7 @@
 ---
-title: "SIer PMOがきついと感じる6つの理由【現役PMOが語る限界と出口】"
+title: "SIer PMOがきついと感じる6つの理由と出口"
 date: 2026-04-25
+lastmod: 2026-10-07
 draft: false
 categories: ["SIer脱出"]
 pickup: false
@@ -141,7 +142,7 @@ SIer PMOのきつさは、あなたの弱さではなく、**多重請負・評�
 ---
 
 **あわせて読みたい：**
-- [SIer PMOからの「脱出ルート」4選：コンサル・事業会社・フリーランス・社内残留を徹底比較](/posts/sier-pmo-escape-routes/)
+- [SIer PMOからの「脱出ルート」4選｜年収・難易度で比較](/posts/sier-pmo-escape-routes/)
 - [PMO年収の実態：経験年数・企業規模・業界別に徹底解説](/posts/pmo-salary-reality/)
 - [SIer PMO向け転職エージェントおすすめ比較【2026年版】](/posts/pmo-transfer-agent-comparison/)
 - [SIer PMOに向いてない人の特徴5つと、その後の選択肢](/posts/sier-pmo-not-suited/)

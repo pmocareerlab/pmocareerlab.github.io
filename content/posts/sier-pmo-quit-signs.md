@@ -133,7 +133,7 @@ SIer PMOの年収は、経験5〜8年で「見えない天井」に当たるこ�
 ---
 
 **あわせて読みたい：**
-- [SIer PMOがきついと感じる6つの理由【現役PMOが語る限界と出口】](/posts/sier-pmo-tough-reasons/)
+- [SIer PMOがきついと感じる6つの理由と出口](/posts/sier-pmo-tough-reasons/)
 - [PMOを辞めたいと思ったとき、最初に確認すること](/posts/pmo-quit-checklist/)
 - [SIer PMOからの「脱出ルート」4選](/posts/sier-pmo-escape-routes/)
 - [PMO転職エージェントおすすめ比較【2026年版】](/posts/pmo-transfer-agent-comparison/)

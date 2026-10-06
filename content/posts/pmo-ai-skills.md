@@ -1,6 +1,7 @@
 ---
-title: "AI時代のPMOに必要なスキル5つ【2026年・生き残るための学び直し】"
+title: "AI時代のPMOに必要なスキル5つ【2026年版】"
 date: 2026-04-28T01:00:00+09:00
+lastmod: 2026-10-07
 draft: false
 categories: ["学び・資格"]
 pickup: false
@@ -160,6 +161,6 @@ AI時代にPMOが生き残るのは、AIに定型業務を任せた上で、人�
 ---
 
 **あわせて読みたい：**
-- [SIer PMOからの「脱出ルート」4選：コンサル・事業会社・フリーランス・社内残留を徹底比較](/posts/sier-pmo-escape-routes/)
-- [SIer PMOがフリーランスになる現実：年収・案件・自由度を正直に比較](/posts/freelance-pmo-reality/)
+- [SIer PMOからの「脱出ルート」4選｜年収・難易度で比較](/posts/sier-pmo-escape-routes/)
+- [フリーランスPMOはやめとけ？月収80万の手取り実態](/posts/freelance-pmo-reality/)
 - [PMOを辞めたいと思ったとき、最初に確認すること](/posts/pmo-quit-checklist/)

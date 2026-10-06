@@ -1,6 +1,7 @@
 ---
-title: "PMO転職の面接でよく聞かれる質問10選と答え方【採用担当目線で解説】"
+title: "PMO転職の面接で聞かれる質問10選と答え方"
 date: 2026-06-14T09:00:00+09:00
+lastmod: 2026-10-07
 draft: false
 categories: ["転職実務"]
 pickup: false
@@ -215,6 +216,6 @@ PMO転職の面接で評価されるのは、**「何をしたか」ではなく
 ---
 
 **関連記事：**
-- [PMOの職務経歴書の書き方：「成果が見えにくい仕事」を転職市場で正しく伝える方法](/posts/pmo-resume-writing/)
+- [PMOの職務経歴書の書き方｜マネジメント経験なしでも通る型](/posts/pmo-resume-writing/)
 - [SIer PMOからの「脱出ルート」4選：コンサル含む4進路を徹底比較](/posts/sier-pmo-escape-routes/)
 - [PMO転職エージェントへの登録が怖い方へ：体験談と正直なアドバイス](/posts/pmo-agent-anxiety/)

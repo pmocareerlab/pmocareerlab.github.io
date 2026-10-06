@@ -1,6 +1,7 @@
 ---
-title: "フリーランスPMOはやめとけ？月収80万円の手取りと「自由」の現実"
+title: "フリーランスPMOはやめとけ？月収80万の手取り実態"
 date: 2026-04-28T00:00:00+09:00
+lastmod: 2026-10-07
 draft: false
 categories: ["フリーランス"]
 pickup: false
@@ -142,6 +143,6 @@ SIerからフリーランスPMOに転身した元同僚は、「独立した最�
 ---
 
 **あわせて読みたい：**
-- [SIer PMOからの「脱出ルート」4選：コンサル・事業会社・フリーランス・社内残留を徹底比較](/posts/sier-pmo-escape-routes/)
+- [SIer PMOからの「脱出ルート」4選｜年収・難易度で比較](/posts/sier-pmo-escape-routes/)
 - [PMOを辞めたいと思ったとき、最初に確認すること](/posts/pmo-quit-checklist/)
-- [SIer PMOがきついと感じる6つの理由【現役PMOが語る限界と出口】](/posts/sier-pmo-tough-reasons/)
+- [SIer PMOがきついと感じる6つの理由と出口](/posts/sier-pmo-tough-reasons/)

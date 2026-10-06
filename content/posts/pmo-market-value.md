@@ -1,6 +1,7 @@
 ---
-title: "PMOのスキルは市場で通用するのか：転職先別・経験年数別に客観的に分析する"
+title: "PMOのスキルは市場で通用するのか｜転職先別に分析"
 date: 2026-05-16T03:00:00+09:00
+lastmod: 2026-10-07
 draft: false
 categories: ["PMOキャリア"]
 pickup: false

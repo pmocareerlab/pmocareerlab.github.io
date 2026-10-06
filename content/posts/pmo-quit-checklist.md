@@ -1,6 +1,7 @@
 ---
-title: "PMOを辞めたいと思ったとき、最初に確認すること【3つのパターンと判断フロー】"
+title: "PMOを辞めたいとき最初に確認すること【判断フロー】"
 date: 2026-04-27
+lastmod: 2026-10-07
 draft: false
 categories: ["SIer脱出"]
 pickup: false
@@ -161,7 +162,7 @@ PMOを辞めたい理由は、大きく3つに分類できます。**パター�
 ---
 
 **あわせて読みたい：**
-- [SIer PMOがきついと感じる6つの理由【現役PMOが語る限界と出口】](/posts/sier-pmo-tough-reasons/)
-- [SIer PMOからの「脱出ルート」4選：コンサル・事業会社・フリーランス・社内残留を徹底比較](/posts/sier-pmo-escape-routes/)
+- [SIer PMOがきついと感じる6つの理由と出口](/posts/sier-pmo-tough-reasons/)
+- [SIer PMOからの「脱出ルート」4選｜年収・難易度で比較](/posts/sier-pmo-escape-routes/)
 - [PMO年収の実態：経験年数・企業規模・業界別に徹底解説](/posts/pmo-salary-reality/)
 - [SIer PMO向け転職エージェントおすすめ比較【2026年版】](/posts/pmo-transfer-agent-comparison/)

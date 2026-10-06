@@ -1,6 +1,7 @@
 ---
-title: "PMOとPMの違いとは？転職市場で「評価される差」を現役PMOが解説"
+title: "PMOとPMの違いとは？転職市場で評価される差"
 date: 2026-07-19T09:00:00+09:00
+lastmod: 2026-10-07
 draft: false
 categories: ["PMOキャリア"]
 pickup: false

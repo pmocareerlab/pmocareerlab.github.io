@@ -1,6 +1,7 @@
 ---
-title: "PMO資格おすすめ5選【PMP・P2M・情報処理、何から取るべきか】"
+title: "PMO資格おすすめ5選【PMP・P2M・情報処理】"
 date: 2026-06-21T09:00:00+09:00
+lastmod: 2026-10-07
 draft: false
 categories: ["学び・資格"]
 pickup: false

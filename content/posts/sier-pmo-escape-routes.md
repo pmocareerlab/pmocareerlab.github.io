@@ -1,6 +1,7 @@
 ---
-title: "SIer PMOからの「脱出ルート」4選：コンサル／事業会社／フリーランス／社内残留を年収・難易度で徹底比較"
+title: "SIer PMOからの「脱出ルート」4選｜年収・難易度で比較"
 date: 2026-04-24
+lastmod: 2026-10-07
 draft: false
 categories: ["SIer脱出"]
 pickup: true

@@ -1,6 +1,7 @@
 ---
-title: "フリーランスPMOの単価相場と案件獲得の全手順【月80〜150万円を狙うロードマップ】"
+title: "フリーランスPMOの単価相場と案件獲得の全手順"
 date: 2026-06-28T09:00:00+09:00
+lastmod: 2026-10-07
 draft: false
 categories: ["PMOキャリア"]
 pickup: false

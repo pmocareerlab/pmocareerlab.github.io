@@ -1,6 +1,7 @@
 ---
-title: "「PMOはやめとけ」「使えない」と言われる理由と、その先にある本当の話"
+title: "「PMOはやめとけ」「使えない」と言われる理由"
 date: 2026-07-26T09:00:00+09:00
+lastmod: 2026-10-07
 draft: false
 categories: ["PMOキャリア"]
 pickup: false

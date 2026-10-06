@@ -1,6 +1,7 @@
 ---
-title: "SIer PMOが転職で後悔する3つのパターンと、やっておくべき準備"
+title: "SIer PMOが転職で後悔する3つのパターン"
 date: 2026-06-05
+lastmod: 2026-10-07
 draft: false
 categories: ["転職実務"]
 pickup: false

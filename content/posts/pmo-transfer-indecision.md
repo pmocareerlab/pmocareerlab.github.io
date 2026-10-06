@@ -1,6 +1,7 @@
 ---
-title: "PMO転職を決断できない本当の理由——迷い続けても何も変わらない事実"
+title: "PMO転職を決断できない本当の理由と抜け出し方"
 date: 2026-05-29
+lastmod: 2026-10-07
 draft: false
 categories: ["PMOキャリア"]
 pickup: false
