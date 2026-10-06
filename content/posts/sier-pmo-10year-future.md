@@ -101,7 +101,7 @@ SIer PMO経験が活きる転職先は複数あります：
 「35歳限界説」は過去の話になりつつあります。PMO・PM経験者の30代後半・40代の転職は実績もあります。ただし選択肢の幅は30代前半と比較して狭くなりやすいのも事実です。「いつかやろう」が10年続くリスクを考えると、早めに市場を確認しておく価値があります。
 {{< /note >}}
 
-→ 年齢別の転職戦略については[PMO転職を年齢別に解説](/posts/pmo-career-change-age/)もあわせてご覧ください。
+→ 年齢別の転職戦略については[40代PMOが狙うべきポジションと年代別の戦略](/posts/pmo-career-change-age/)もあわせてご覧ください。
 
 ---
 
@@ -153,7 +153,7 @@ SIer PMOの10年後には、管理職・継続・転職の3つのルートがあ
 ---
 
 **あわせて読みたい：**
-- [PMO転職を年齢別に解説——28歳・33歳・38歳でやるべきことの違い](/posts/pmo-career-change-age/)
+- [PMO転職は年齢で不利になる？30代・40代の現実と戦略](/posts/pmo-career-change-age/)
 - [PMOの市場価値を転職先別に分析](/posts/pmo-market-value/)
 - [SIer PMOがきついと感じる6つの理由](/posts/sier-pmo-tough-reasons/)
 - [PMO転職エージェントおすすめ比較【2026年版】](/posts/pmo-transfer-agent-comparison/)
