@@ -4,7 +4,7 @@ date: 2026-04-24
 lastmod: 2026-10-07
 draft: false
 categories: ["SIer脱出"]
-pickup: true
+pickup: false
 summary: "SIer PMO経験5年超の運営者が、4つの脱出ルートを年収・難易度・向き不向きで徹底比較。コンサル・事業会社・フリーランス・社内残留、自分に合う選択が見つかります。"
 description: "SIer PMO経験者が取れる4つの現実的な進路を年収・難易度・向き不向きで徹底比較。コンサル転職・事業会社・フリーランス・社内残留、最初の1歩まで解説します。"
 ---
