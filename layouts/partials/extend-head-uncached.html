@@ -1,0 +1,7 @@
+{{/* 404ページだけの調整。テーマの head.html は .Title をそのまま使うため、
+     Hugo 既定の "404 Page not found" がブラウザのタブに出てしまう。
+     head.html 全体を上書きすると submodule 更新時に差分が出るので、ここで補正する。 */}}
+{{ if eq .Kind "404" }}
+  <meta name="robots" content="noindex, nofollow">
+  <script>document.title = "記事が見つかりません · {{ site.Title }}";</script>
+{{ end }}
