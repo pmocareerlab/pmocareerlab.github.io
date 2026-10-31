@@ -163,4 +163,5 @@ AI時代にPMOが生き残るのは、AIに定型業務を任せた上で、人�
 **あわせて読みたい：**
 - [SIer PMOからの「脱出ルート」4選｜年収・難易度で比較](/posts/sier-pmo-escape-routes/)
 - [フリーランスPMOはやめとけ？月収80万の手取り実態](/posts/freelance-pmo-reality/)
-- [PMOを辞めたいと思ったとき、最初に確認すること](/posts/pmo-quit-checklist/)
+- [PMOを辞めたいとき最初に確認すること【判断フロー】](/posts/pmo-quit-checklist/)
+- [AIに個人情報を入れるリスク｜経路別に整理する](/posts/ai-personal-data-risk/)
